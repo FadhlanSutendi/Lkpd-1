@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="Kategori">Perekomendasi</label>
+        <select name="Kategori" id="Kategori" onchange="changeLabel(this)">
+            <option value="Ada">Ada</option>
+            <option value="Tidak">Tidak</option>
+        </select>
+        <div id="name_wrapper" style="display:none;">
+            <label for="nama">Nama Lengkap Perekomendasi</label>
+            <input type="text" id="name" name="name_lengkap">
+              <br>
+            <label for="jabatan">Kategori Perekomenasi*</label><br>
+            <select id="jabatan" name="jabatan" onchange="toggleJabatan(this)">
+                <option value="PekerjaBRI">Pekerja BRI</option>
+                <option value="Purnabakti">Purnabakti</option>
+            </select>
+             <br>
+             <br>
+            <label for="nama">Nomor id Pegawai</label>
+            <input type="text" id="name" name="name_lengkap">
+             <br>
+             <br>
+            <div id="jabatan_input">
+                <label for="nama">Jabatan Perekomendasi</label>
+            <input type="text" id="name" name="name_lengkap">
+            </div>
+            <br>
+        </div>
+        <button type="button" onclick="">Selanjutnya</button>
+    </form>
+</body>
+<script>
+    function changeLabel(e) {
+        let nameWrapper = document.getElementById("name_wrapper");
+        if (e.value == "Ada") {
+            nameWrapper.style.display = "block";
+        }else {
+            nameWrapper.style.display = "none";
+        }
+    }
+    function toggleJabatan(e) {
+        let nameWrapper = document.getElementById("jabatan_input");
+        if (e.value == "PekerjaBRI") {
+            nameWrapper.style.display = "block";
+        }else {
+            nameWrapper.style.display = "none";
+        }
+    }
+
+    
+</script>
+</html>

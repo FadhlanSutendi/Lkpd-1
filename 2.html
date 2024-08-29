@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>2.Html</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: gray;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo img {
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.navbar-menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 30px;
+    padding-top: 30px;
+}
+
+.perlengkapan {
+    text-align: center;
+}
+
+.perlengkapan h2 {
+    margin-bottom: 20px;
+}
+
+.perlengkapan-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produk-card {
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.gambar-image {
+    width: 100%;
+    height: auto;
+}
+
+.keterangan-info {
+    padding: 15px;
+}
+
+.keterangan-info h3 {
+    margin-top: 0;
+}
+
+.keterangan-info p {
+    margin: 10px 0;
+}
+
+.like {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.like span {
+    margin-right: 10px;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+.list-bawah {
+    position: relative;
+    display: inline-block;
+}
+
+.bawah {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.list-produk {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.list-produk a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.list-produk a:hover {
+    background-color: #f1f1f1;
+}
+
+.list-bawah:hover .list-produk {
+    display: block;
+}
+</style>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="Images/Tnf.png" width="70" alt="Logo">
+            </div>
+            <div class="navbar-menu">
+                <div class="list-bawah">
+                    <a href="#" class="bawah">Produk</a>
+                    <div class="list-produk">
+                        <a href="">Tas</a>
+                        <a href="#">Jaket</a>
+                        <a href="#">Sepatu</a>
+                    </div>
+                </div>
+                <a href="#">Tentang</a>
+                <a href="#">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="perlengkapan" class="perlengkapan">
+            <h2>Produk Terbaik</h2>
+            <div class="perlengkapan-list">
+                <div class="produk-card" id="">
+                    <img src="Images/Screenshot 2024-08-26 195321.png" alt="" class="gambar-image">
+                    <div class="keterangan-info">
+                        <h3>Jaket The North Face</h3>
+                        <p>The North Face sendiri merupakan merek ternama asal Amerika Serikat yang sangat populer di kalangan pecinta aktivitas outdoor. Jaket-jaket TNF dirancang khusus untuk memberikan perlindungan maksimal bagi penggunanya saat beraktivitas di luar ruangan, terutama dalam kondisi cuaca yang ekstrem.</p>
+                        <div class="like">
+                            <span><i class="fas fa-shopping-cart icon"></i>Total Pembelian: 150</span>
+                            <span><i class="fas fa-heart icon"></i>Total Like: 75</span>
+                        </div>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="produk-card" id="mountain">
+                    <img src="Images/tas.png" alt="Destinasi Gunung" class="gambar-image">
+                    <div class="keterangan-info">
+                        <h3>Tas Daypack</h3>
+                        <p>Tas TNF adalah singkatan dari Tas The North Face. Sama seperti jaketnya, The North Face juga terkenal dengan tas-tas berkualitas tinggi yang dirancang khusus untuk aktivitas outdoor dan gaya hidup sehari-hari.</p>
+                        <div class="like">
+                            <span><i class="fas fa-shopping-cart icon"></i>Total Pembelian: 30</span>
+                            <span><i class="fas fa-heart icon"></i>Total Like: 95</span>
+                        </div>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </div>
+                </div>
+                <div class="produk-card" id="city">
+                    <img src="Images/sepatu.png" alt="Destinasi Kota" class="gambar-image">
+                    <div class="keterangan-info">
+                        <h3>Sepatu The North Face</h3>
+                        <p>Sepatu TNF dirancang khusus untuk memberikan kenyamanan, perlindungan, dan performa terbaik saat digunakan untuk berbagai aktivitas seperti hiking, trekking, running, dan kegiatan luar ruangan lainnya.</p>
+                        <div class="like">
+                            <span><i class="fas fa-shopping-cart icon"></i>Total Pembelian: 50</span>
+                            <span><i class="fas fa-heart icon"></i>Total Like: 1005</span>
+                        </div>
+                        <a href="#" class="read-more">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: gray; padding-top: 100px; text-align: center; font-size: 14px; color: #000000;">
+        <p>&copy; 2024 The North Face. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
